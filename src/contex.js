@@ -42,7 +42,7 @@ const AppProvider = ({children}) => {
         content_type:"beachresort",
         order:'-fields.name'//the api will give result according to the name first letter from last to first..
       })
-      console.log("response is",response.items)
+     
         let normaldata=response.items.map((item)=>{
             let id=item.sys.id;
             let image=item.fields.images.map((image)=>image.fields.file.url);
